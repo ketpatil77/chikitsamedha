@@ -1,0 +1,25 @@
+.DS_Store
+
+# Local runtime state
+.api_pid
+.oneclick_api.log
+
+# Python environments and caches
+.venv/
+.venv312/
+.venv_app/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Editor settings
+.vscode/
+
+# Optional local OCR checkout
+tesseract/

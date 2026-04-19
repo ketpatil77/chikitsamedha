@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ── Typography: Clean & Professional ── */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* ── Colors: Matte Slate Theme (Trustworthy & Legible) ── */
+  --bg-app: #0B0C0E;       /* Deep matte charcoal, not pitch black */
+  --bg-panel: #15171B;     /* Slightly lighter for cards */
+  --bg-panel-hover: #1A1D23;
+  
+  --border-subtle: #242832;
+  --border-focus: #374151;
+
+  --accent-primary: #10B981; /* Emerald 500 - Clear Medical Green */
+  --accent-glow: rgba(16, 185, 129, 0.15);
+  
+  --text-main: #F9FAFB;    /* Gray 50 */
+  --text-muted: #9CA3AF;   /* Gray 400 */
+  --text-dim: #6B7280;     /* Gray 500 */
+
+  /* ── Status Colors (WCAG Compliant) ── */
+  --safe: #34D399;
+  --safe-bg: rgba(52, 211, 153, 0.1);
+  --warning: #FBBF24;
+  --warning-bg: rgba(251, 191, 36, 0.1);
+  --danger: #F87171;
+  --danger-bg: rgba(248, 113, 113, 0.1);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.025em; /* Tight professional tracking */
+  color: #fff;
+}
+
+/* ── Component Primitives ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 0.925rem;
+  transition: all 0.2sease;
+  border-radius: var(--radius-md);
+  height: 44px;
+  padding: 0 1.25rem;
+}
+
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: #000; /* High contrast text on green */
+  font-weight: 600;
+}
+.btn-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+.btn-ghost:hover {
+  background: var(--bg-panel);
+  color: var(--text-main);
+  border-color: var(--border-focus);
+}
+
+/* ── Card Systems ── */
+.card-panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.card-panel:hover {
+  border-color: var(--border-focus);
+}
+
+.input-field {
+  width: 100%;
+  background: #0F1115;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px var(--accent-glow);
+}
+
+/* ── Utilities ── */
+.layout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4B5563;
+}

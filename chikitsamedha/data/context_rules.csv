@@ -1,0 +1,5 @@
+context,drug,severity,en,mr,en_simple,mr_simple
+Alcohol,Paracetamol,HIGH,"Avoid excess alcohol while on Paracetamol — liver strain.","पॅरासिटामॉल घेताना मद्यपान टाळा — यकृतावर ताण येतो.","Limit alcohol when taking Paracetamol; it stresses the liver.","पॅरासिटामॉल घेताना दारू कमी करा; यकृतावर ताण येतो."
+Grapefruit,Atorvastatin,HIGH,"Grapefruit juice increases statin levels — avoid.","ग्रेपफ्रूट रसामुळे स्टॅटिनचे प्रमाण वाढते — टाळा.","Skip grapefruit juice with Atorvastatin.","अटोरव्हास्टॅटिन घेताना ग्रेपफ्रूट रस टाळा."
+Food,Metformin,LOW,"Take Metformin with meals to reduce stomach upset.","मेटफॉर्मिन जेवणासोबत घ्या — पोटातील त्रास कमी होतो.","Have Metformin with food to avoid stomach upset.","मेटफॉर्मिन जेवणासह घ्या म्हणजे पोट बिघडणार नाही."
+Alcohol,Aspirin,HIGH,"Alcohol with Aspirin increases bleeding risk.","एस्पिरिनसोबत मद्यपान केल्यास रक्तस्त्रावाचा धोका वाढतो.","Avoid alcohol with Aspirin.","एस्पिरिनसोबत मद्य टाळा."

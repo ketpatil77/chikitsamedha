@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+rapidfuzz
+reportlab
+pillow
+pytesseract
+pyttsx3
+python-multipart

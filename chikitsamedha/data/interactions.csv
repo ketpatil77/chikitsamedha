@@ -1,0 +1,11 @@
+drug_a,drug_b,risk_level,explanation,risk_delta,effect_delta
+Ibuprofen,Atenolol,HIGH,"NSAIDs may blunt antihypertensive effect",40,-30
+Paracetamol,Ibuprofen,LOW,"Generally safe short term; monitor stomach",10,0
+Paracetamol,Cetirizine,MEDIUM,"May increase drowsiness",20,0
+Aspirin,Ibuprofen,MEDIUM,"Additive GI risk",25,-5
+Losartan,Hydrochlorothiazide,LOW,"Commonly combined; monitor electrolytes",10,0
+Metformin,Pioglitazone,LOW,"Additive glucose lowering; monitor edema",10,-5
+Sertraline,Tramadol,HIGH,"Serotonergic interaction risk",45,-10
+Escitalopram,Tramadol,HIGH,"Serotonergic interaction risk",45,-10
+Ramipril,Spironolactone,MEDIUM,"Hyperkalemia risk",30,-5
+Omeprazole,Clopidogrel,MEDIUM,"CYP2C19 interaction (relevance debated)",25,-10
